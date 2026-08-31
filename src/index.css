@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@theme {
+  /* Ink & jade — warm heritage palette */
+  --color-pine: #1e4a3f;        /* deep pine green — primary */
+  --color-pine-dark: #15362e;   /* darker green for depth */
+  --color-pine-light: #2e6b5c;  /* lighter green */
+  --color-jade: #4a8572;        /* jade accent */
+  --color-ink: #2b2a26;         /* warm ink black for text */
+  --color-ink-soft: #5c5a52;    /* secondary text */
+  --color-parchment: #faf6ee;   /* warm ivory background */
+  --color-parchment-dark: #efe6d8; /* deeper ivory */
+  --color-brass: #b98a2f;       /* brass gold accent */
+  --color-brass-light: #d3a94a; /* lighter brass */
+  --color-clay: #c46a3e;        /* subtle terracotta (rare accent) */
+  --font-sans: "Noto Sans TC", system-ui, sans-serif;
+  --font-serif: "Noto Serif TC", "Noto Sans TC", serif;
+  --font-display: "Cormorant Garamond", "Noto Serif TC", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-parchment);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(185, 138, 47, 0.3);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Brass gradient text */
+.text-brass-gradient {
+  background: linear-gradient(115deg, #d3a94a 0%, #b98a2f 45%, #e6c474 60%, #b98a2f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Ambient wash for heroes */
+.hero-wash {
+  background-image:
+    radial-gradient(circle at 18% 30%, rgba(185, 138, 47, 0.14) 0%, transparent 42%),
+    radial-gradient(circle at 82% 74%, rgba(74, 133, 114, 0.16) 0%, transparent 46%),
+    radial-gradient(circle at 60% 8%, rgba(255, 255, 255, 0.5) 0%, transparent 35%);
+}
+
+/* Soft green-blue gradient band for alternating sections */
+.bg-heritage {
+  background:
+    radial-gradient(880px 420px at 12% 0%, rgba(46, 107, 92, 0.14) 0%, transparent 55%),
+    radial-gradient(760px 380px at 92% 100%, rgba(185, 138, 47, 0.12) 0%, transparent 55%),
+    linear-gradient(180deg, #ffffff 0%, #f6f1e6 100%);
+}
+
+/* Fine small cross motif background */
+.bg-cross-soft {
+  background-image: radial-gradient(rgba(185, 138, 47, 0.22) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes bounceDown {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 0.4;
+  }
+}
+
+.animate-bounce-down {
+  animation: bounceDown 2.2s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
