@@ -3,8 +3,8 @@ import { PageHero } from "../components/PageHero";
 import { Reveal } from "../components/ScrollReveal";
 import { SectionTitle } from "../components/SectionTitle";
 import { VerseCard } from "../components/VerseCard";
-import { aboutContent, staff, leaders } from "../data/content";
-import { ArrowRightIcon, CrossIcon, UsersIcon } from "../components/icons";
+import { aboutContent, teamMembers } from "../data/content";
+import { ArrowRightIcon, UsersIcon } from "../components/icons";
 
 export function AboutPage() {
   return (
@@ -79,19 +79,19 @@ export function AboutPage() {
             </div>
           </section>
 
-          {/* Staff */}
+          {/* Team */}
           <section className="mb-20">
             <Reveal>
               <SectionTitle
                 eyebrow="Our Team"
-                title="全職同工"
-                subtitle="與我們一同服事、牧養與關顧"
+                title="教牧及同工團隊"
+                subtitle="傳道、長老、執事與職員，一同牧養及服事神的家"
                 centered
               />
             </Reveal>
             <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {staff.map((person, i) => (
-                <Reveal key={person.name} delay={i * 80}>
+              {teamMembers.map((person, i) => (
+                <Reveal key={person.name} delay={i * 60}>
                   <div className="group relative overflow-hidden rounded-2xl border border-parchment-dark bg-white p-8 transition-all hover:-translate-y-1 hover:border-brass/50 hover:shadow-[0_24px_60px_-32px_rgba(30,74,63,0.4)]">
                     <div className="flex items-center gap-4">
                       <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-jade/10 transition-colors group-hover:bg-jade/20">
@@ -106,35 +106,6 @@ export function AboutPage() {
                 </Reveal>
               ))}
             </div>
-          </section>
-
-          {/* Leaders */}
-          <section>
-            <Reveal>
-              <SectionTitle eyebrow="Leadership" title="長老及執事" centered />
-            </Reveal>
-            <Reveal delay={100}>
-              <div className="mx-auto mt-12 max-w-2xl overflow-hidden rounded-2xl border border-parchment-dark bg-white">
-                <div className="grid grid-cols-2 border-b border-parchment-dark bg-heritage px-6 py-4 text-sm font-bold text-pine">
-                  <span>名字</span>
-                  <span>職稱</span>
-                </div>
-                {leaders.map((person, i) => (
-                  <div
-                    key={person.name}
-                    className={`grid grid-cols-2 px-6 py-4 text-sm transition-colors hover:bg-parchment/60 ${
-                      i % 2 === 0 ? "bg-white" : "bg-parchment/40"
-                    }`}
-                  >
-                    <span className="text-ink/80">{person.name}</span>
-                    <span className="inline-flex items-center gap-2 text-jade">
-                      <CrossIcon className="h-3 w-3 text-brass" />
-                      {person.role}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </Reveal>
           </section>
 
           {/* Related links */}

@@ -58,22 +58,19 @@ export const stats = [
   { value: "1971", label: "紅磡堂啟用" },
 ];
 
-export const staff = [
-  { name: "吳紹賓傳道", role: "堂主任", type: "教牧" },
-  { name: "凌凱妮傳道", role: "教牧", type: "教牧" },
-  { name: "鄧麗明傳道", role: "教牧", type: "教牧" },
-  { name: "單關綺霞姊妹", role: "幹事", type: "同工" },
-  { name: "葉陳佩玉姊妹", role: "幹事", type: "同工" },
-];
-
-export const leaders = [
+export const teamMembers = [
+  { name: "吳紹賓傳道", role: "顧問傳道" },
+  { name: "凌凱妮傳道", role: "傳道" },
+  { name: "鄧麗明傳道", role: "傳道" },
   { name: "黃耀弟兄", role: "長老" },
   { name: "何健恒弟兄", role: "長老" },
   { name: "謝思名弟兄", role: "長老" },
   { name: "單慶新弟兄", role: "執事" },
   { name: "趙潘志英姊妹", role: "執事" },
   { name: "謝志衍弟兄", role: "執事" },
-  { name: "楊潔純姊妹", role: "執事" },
+  { name: "杜美惠姊妹", role: "執事" },
+  { name: "單關綺霞姊妹", role: "職員" },
+  { name: "葉陳佩玉姊妹", role: "職員" },
 ];
 
 export const aboutContent = {
