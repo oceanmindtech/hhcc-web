@@ -59,15 +59,17 @@ export const stats = [
 ];
 
 export const teamMembers = [
+  { name: "謝思名長老", role: "署理堂主任" },
+  { name: "何健恒長老", role: "長老" },
   { name: "吳紹賓傳道", role: "顧問傳道" },
-  { name: "凌凱妮傳道", role: "傳道" },
   { name: "鄧麗明傳道", role: "傳道" },
-  { name: "黃耀弟兄", role: "長老" },
-  { name: "何健恒弟兄", role: "長老" },
-  { name: "謝思名弟兄", role: "長老" },
+  { name: "李振宇傳道", role: "傳道" },
   { name: "單慶新弟兄", role: "執事" },
   { name: "趙潘志英姊妹", role: "執事" },
   { name: "謝志衍弟兄", role: "執事" },
+  { name: "楊潔純姊妹", role: "執事" },
+  { name: "黃偉雄弟兄", role: "執事" },
+  { name: "袁家偉弟兄", role: "執事" },
   { name: "杜美惠姊妹", role: "執事" },
   { name: "單關綺霞姊妹", role: "職員" },
   { name: "葉陳佩玉姊妹", role: "職員" },
