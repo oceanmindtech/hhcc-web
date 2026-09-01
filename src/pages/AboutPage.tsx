@@ -5,6 +5,7 @@ import { SectionTitle } from "../components/SectionTitle";
 import { VerseCard } from "../components/VerseCard";
 import { aboutContent, teamMembers } from "../data/content";
 import { ArrowRightIcon, UsersIcon } from "../components/icons";
+import hhccLogo from "../assets/hhcc-logo.png";
 
 export function AboutPage() {
   return (
@@ -58,12 +59,11 @@ export function AboutPage() {
                 <div className="relative flex min-h-[280px] items-center justify-center border-b border-parchment-dark bg-heritage px-10 py-12 md:border-b-0 md:border-r">
                   <div className="absolute inset-0 hero-wash" />
                   <div className="relative text-center">
-                    <svg viewBox="0 0 96 96" className="mx-auto h-32 w-32">
-                      <path d="M48 10v52M26 32h44" stroke="#b98a2f" strokeWidth="4" strokeLinecap="round" fill="none" />
-                      <text x="48" y="88" textAnchor="middle" fill="#b98a2f" fontSize="17" fontFamily="'Cormorant Garamond', serif" letterSpacing="2">
-                        HHCC
-                      </text>
-                    </svg>
+                    <img
+                      src={hhccLogo}
+                      alt="紅磡基督徒會堂會徽"
+                      className="mx-auto h-36 w-36 object-contain drop-shadow-lg"
+                    />
                     <p className="mt-3 text-xs tracking-[0.2em] text-ink/50">EST. 1971</p>
                   </div>
                 </div>
