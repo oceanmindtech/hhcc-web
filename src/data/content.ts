@@ -7,7 +7,7 @@ export const churchInfo = {
   email: "info@hhcc.org.hk",
 };
 
-export const appStoreUrl = "https://apps.apple.com/tm/app/id6749517899";
+export const appStoreUrl = "https://hhcc.oceanmindtech.com/install.php";
 
 export const verses = [
   { text: "我來了，是要叫羊得生命，並且得的更豐盛。", reference: "約翰福音 10:10" },

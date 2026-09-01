@@ -58,7 +58,7 @@ export function NewsPage() {
                 rel="noreferrer"
                 className="mt-5 inline-flex items-center gap-2 rounded-full bg-pine px-6 py-3 text-sm font-semibold text-parchment transition-colors hover:bg-pine-light"
               >
-                App Store 下載
+                下載本堂 App
                 <ExternalLinkIcon className="h-4 w-4" />
               </a>
             </div>
