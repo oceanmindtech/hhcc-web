@@ -7,6 +7,24 @@ export const churchInfo = {
   email: "info@hhcc.org.hk",
 };
 
+export const socialLinks = [
+  {
+    name: "Instagram",
+    url: "https://www.instagram.com/hunghomcc",
+    label: "@hunghomcc",
+  },
+  {
+    name: "Facebook",
+    url: "https://www.facebook.com/hhcc.live",
+    label: "HHCC Live",
+  },
+  {
+    name: "YouTube",
+    url: "https://youtube.com/@hhcc-online",
+    label: "HHCC Online",
+  },
+];
+
 export const appStoreUrl = "https://hhcc.oceanmindtech.com/install.php";
 
 export const verses = [

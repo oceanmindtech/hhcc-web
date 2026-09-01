@@ -1,7 +1,16 @@
 import { PageHero } from "../components/PageHero";
 import { Reveal } from "../components/ScrollReveal";
-import { churchInfo, appStoreUrl } from "../data/content";
-import { BibleIcon, ExternalLinkIcon, MapPinIcon, PhoneIcon } from "../components/icons";
+import { churchInfo, appStoreUrl, socialLinks } from "../data/content";
+import {
+  BibleIcon,
+  ExternalLinkIcon,
+  InstagramIcon,
+  FacebookIcon,
+  YouTubeIcon,
+  MapPinIcon,
+  PhoneIcon,
+  UsersIcon,
+} from "../components/icons";
 
 export function ContactPage() {
   return (
@@ -73,6 +82,34 @@ export function ContactPage() {
                 </div>
               </Reveal>
 
+              <Reveal delay={140}>
+                <div className="rounded-2xl border border-parchment-dark bg-white p-7">
+                  <div className="flex items-center gap-4">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-jade/10">
+                      <UsersIcon className="h-6 w-6 text-jade" />
+                    </div>
+                    <div>
+                      <h3 className="font-serif font-bold text-pine">社交媒體</h3>
+                      <p className="mt-1 flex flex-wrap gap-2 text-sm text-ink/65">
+                        {socialLinks.map((link) => (
+                          <a
+                            key={link.name}
+                            href={link.url}
+                            target="_blank"
+                            rel="noreferrer"
+                            aria-label={link.name}
+                            className="inline-flex items-center gap-1.5 rounded-full border border-parchment-dark px-3 py-1.5 font-medium text-ink/70 transition-colors hover:border-brass hover:text-brass"
+                          >
+                            <SocialIcon name={link.name} className="h-4 w-4" />
+                            {link.name}
+                          </a>
+                        ))}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Reveal>
+
               <Reveal delay={160}>
                 <a
                   href={appStoreUrl}
@@ -108,4 +145,17 @@ export function ContactPage() {
       </div>
     </>
   );
+}
+
+function SocialIcon({ name, className }: { name: string; className: string }) {
+  switch (name) {
+    case "Instagram":
+      return <InstagramIcon className={className} />;
+    case "Facebook":
+      return <FacebookIcon className={className} />;
+    case "YouTube":
+      return <YouTubeIcon className={className} />;
+    default:
+      return <ExternalLinkIcon className={className} />;
+  }
 }

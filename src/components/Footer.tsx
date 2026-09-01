@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { churchInfo, navLinks, moreLinks } from "../data/content";
-import { BibleIcon, MapPinIcon, PhoneIcon } from "./icons";
+import { churchInfo, navLinks, moreLinks, socialLinks } from "../data/content";
+import { BibleIcon, MapPinIcon, PhoneIcon, InstagramIcon, FacebookIcon, YouTubeIcon, ExternalLinkIcon } from "./icons";
 import hhccLogo from "../assets/hhcc-logo.png";
 
 export function Footer() {
@@ -81,9 +81,36 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-parchment/10 pt-6 text-sm sm:flex-row">
           <p>版權所有 © {year} {churchInfo.name}</p>
+          <div className="flex items-center gap-4">
+            {socialLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.url}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={link.name}
+                className="p-2 text-parchment/60 transition-colors hover:text-brass-light"
+              >
+                <SocialIcon name={link.name} className="h-5 w-5" />
+              </a>
+            ))}
+          </div>
           <p className="text-parchment/40">願你認識耶穌基督，得著豐盛的生命</p>
         </div>
       </div>
     </footer>
   );
+}
+
+function SocialIcon({ name, className }: { name: string; className: string }) {
+  switch (name) {
+    case "Instagram":
+      return <InstagramIcon className={className} />;
+    case "Facebook":
+      return <FacebookIcon className={className} />;
+    case "YouTube":
+      return <YouTubeIcon className={className} />;
+    default:
+      return <ExternalLinkIcon className={className} />;
+  }
 }
