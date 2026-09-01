@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { churchInfo, navLinks } from "../data/content";
-import { CrossIcon } from "./icons";
+import hhccLogo from "../assets/hhcc-logo.png";
 
 export function Header() {
   const location = useLocation();
@@ -36,9 +36,11 @@ export function Header() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="flex h-16 items-center justify-between sm:h-[72px]">
             <Link to="/" className="group flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-pine ring-1 ring-brass/30 transition-transform duration-300 group-hover:scale-105">
-                <CrossIcon className="h-5 w-5 text-brass-light" />
-              </div>
+              <img
+                src={hhccLogo}
+                alt={churchInfo.name}
+                className="h-12 w-12 object-contain drop-shadow-sm transition-transform duration-300 group-hover:scale-105"
+              />
               <div>
                 <p className="text-sm font-bold leading-tight tracking-wide text-ink">
                   {churchInfo.name}

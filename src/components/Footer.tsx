@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { churchInfo, navLinks, moreLinks } from "../data/content";
-import { BibleIcon, CrossIcon, MapPinIcon, PhoneIcon } from "./icons";
+import { BibleIcon, MapPinIcon, PhoneIcon } from "./icons";
+import hhccLogo from "../assets/hhcc-logo.png";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -13,8 +14,12 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-parchment/10 ring-1 ring-brass/40">
-                <CrossIcon className="h-5 w-5 text-brass-light" />
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-parchment/15 ring-1 ring-brass/40">
+                <img
+                  src={hhccLogo}
+                  alt={churchInfo.name}
+                  className="h-10 w-10 object-contain"
+                />
               </div>
               <div>
                 <p className="font-bold text-parchment">{churchInfo.name}</p>
