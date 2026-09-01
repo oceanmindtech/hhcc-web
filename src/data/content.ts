@@ -3,7 +3,7 @@ export const churchInfo = {
   englishName: "Hung Hom Christian Church",
   tagline: "歡迎各位參加本堂崇拜，願你們遇見神，心靈被提升，生命得改變。",
   address: "紅磡馬頭圍道 37 號紅磡商業中心 B 座 4 樓 410 室",
-  phones: ["27731928", "27731937"],
+  phones: ["27731928"],
   email: "info@hhcc.org.hk",
 };
 

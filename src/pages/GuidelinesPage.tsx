@@ -111,7 +111,7 @@ export function GuidelinesPage() {
               <p className="font-serif text-lg font-bold text-pine">願主的平安常與你們同在</p>
               <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-ink/65">
                 不論風雨，當以智慧衡量環境與道路安全作出決定。
-                如有疑問，可致電本堂查詢：2773 1928　·　2773 1937。
+                如有疑問，可致電本堂查詢：2773 1928。
               </p>
             </div>
           </Reveal>

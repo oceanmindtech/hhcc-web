@@ -75,7 +75,7 @@ export function MinistriesPage() {
                 無論你在人生哪一個階段，都有屬於你的屬靈群體。歡迎在崇拜後與長執或傳道人傾談，
                 或致電本堂查詢，我們樂意為你安排。
               </p>
-              <p className="mt-5 text-sm text-jade">電話：2773 1928　·　2773 1937</p>
+              <p className="mt-5 text-sm text-jade">電話：2773 1928</p>
             </section>
           </Reveal>
 
