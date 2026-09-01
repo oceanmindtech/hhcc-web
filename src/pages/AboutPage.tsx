@@ -85,7 +85,7 @@ export function AboutPage() {
               <SectionTitle
                 eyebrow="Our Team"
                 title="教牧及同工團隊"
-                subtitle="傳道、長老、執事與職員，一同牧養及服事神的家"
+                subtitle="傳道、長老、執事與幹事，一同牧養及服事神的家"
                 centered
               />
             </Reveal>

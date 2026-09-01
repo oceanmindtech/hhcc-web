@@ -89,8 +89,8 @@ export const teamMembers = [
   { name: "黃偉雄弟兄", role: "執事" },
   { name: "袁家偉弟兄", role: "執事" },
   { name: "杜美惠姊妹", role: "執事" },
-  { name: "單關綺霞姊妹", role: "職員" },
-  { name: "葉陳佩玉姊妹", role: "職員" },
+  { name: "單關綺霞姊妹", role: "幹事" },
+  { name: "葉陳佩玉姊妹", role: "幹事" },
 ];
 
 export const aboutContent = {
