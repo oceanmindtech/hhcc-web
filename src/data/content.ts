@@ -55,17 +55,15 @@ export const fellowships = [
   { name: "但以理團契", schedule: "逢星期六", time: "下午 2:30", audience: "中一至中六學生", category: "兒童及青少年" },
   { name: "迦勒團契", schedule: "逢星期六", time: "下午 2:30", audience: "大專／初職", category: "青年" },
   { name: "約拿單團契", schedule: "逢星期六", time: "下午 4:30", audience: "初職", category: "青年" },
-  { name: "婦女團契", schedule: "逢星期六", time: "下午 2:30", audience: "婦女", category: "成人" },
   { name: "摩西團契", schedule: "逢第一、第三週的星期日", time: "下午 2:30", audience: "長者", category: "成人" },
   { name: "雅各團契", schedule: "逢每月第二及第四週的星期日", time: "下午 2:30", audience: "中年人及夫婦", category: "成人" },
   { name: "約瑟團契", schedule: "逢每月第二及第四週的星期日", time: "下午 2:30", audience: "職青及夫婦", category: "成人" },
-  { name: "約書亞團契", schedule: "逢每月第二、三、四週的星期日", time: "下午 2:30", audience: "在職人士", category: "成人" },
 ];
 
 export const ministryHighlights = [
   { title: "兒童及青少年", desc: "撒母耳團、但以理團，讓孩子與少年人從小認識真理，在愛與群體中成長。" },
   { title: "青年團契", desc: "迦勒團、約拿單團，陪伴大專及初職肢體，在人生關鍵階段彼此同行。" },
-  { title: "成人及家庭", desc: "婦女團、摩西團、雅各團、約瑟團、約書亞團，建立彼此相愛的屬靈家園。" },
+  { title: "成人及家庭", desc: "摩西團、雅各團、約瑟團，建立彼此相愛的屬靈家園。" },
   { title: "主日學培育", desc: "主日上午十時，與我們一同研讀聖經、認識真道、實踐信仰。" },
 ];
 
